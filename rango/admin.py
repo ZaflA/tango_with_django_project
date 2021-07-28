@@ -7,8 +7,8 @@ class CategoryAdmin(admin.ModelAdmin):
     #list_display = ('name', 'views', 'likes')
 
 class PageAdmin(admin.ModelAdmin):
-    fields = ['category','title', 'url', 'views']
-    list_display = ('title', 'category', 'url')
+    #fields = ['category','title', 'url', 'views']
+    list_display = ('title', 'category', 'url','views')
 
 # Register your models here.
 admin.site.register(Category,CategoryAdmin)
